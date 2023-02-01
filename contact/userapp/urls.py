@@ -1,7 +1,8 @@
 #django-rest imports
 from django.urls import path
 from rest_framework.authtoken.views import obtain_auth_token
-#in-apps imports
+
+
 from userapp.views import RegisterUser, LogoutUser
 
 
@@ -14,4 +15,3 @@ urlpatterns = [
 ]
 
 
-# in obtain_auth_token view, we need to pass username and password 

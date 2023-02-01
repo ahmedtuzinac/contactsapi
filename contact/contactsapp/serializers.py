@@ -12,7 +12,7 @@ class ContactSerializer(ModelSerializer):
     def create(self, validated_data):
 
         contact = Contact.objects.create(
-            user = self.context["request"].user, # getting user in serializers, new :) 
+            user = self.context["request"].user, 
             name = validated_data["name"],
             phonenumber = validated_data["phonenumber"],
             email = validated_data["email"]
